@@ -1,6 +1,7 @@
 import express, { Application } from 'express';
 import cors from 'cors'
 import IndexRoutes from './routes/index';
+import 'dotenv/config'
 
 class App {
     public app: Application;

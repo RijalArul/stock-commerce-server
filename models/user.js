@@ -1,5 +1,7 @@
 'use strict'
 const { Model } = require('sequelize')
+// let Password = require('../middleware/Password')
+// const Password = require('../middleware/Password')
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -40,10 +42,6 @@ module.exports = (sequelize, DataTypes) => {
             msg: 'Minimal Password required 5-12 Character'
           },
           notEmpty: {
-            msg: 'Minimal Password required 5-12 Character'
-          },
-          len: {
-            args: [5, 12],
             msg: 'Minimal Password required 5-12 Character'
           }
         }

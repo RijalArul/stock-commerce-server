@@ -12,6 +12,7 @@ class UserRoutes implements IRouter {
     routes(): void {
         this.router.post('/register/admin', UserController.registerAdmin);
         this.router.post('/register/customer', UserController.registerCustomer);
+        this.router.post('/login', UserController.login)
     }
 }
 
